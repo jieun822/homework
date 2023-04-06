@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* 'Varela Round' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+
+/* 조건 2번과 3번은 못 지켜냈습니다........ㅎ */
+/* common */
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+main {
+  height: 3000px;
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+}
+
+menu {
+  list-style: none;
+}
+
+li { /* li들이 가로로 정렬될 수 있도록 함 */
+  display: inline-block;
+}
+
+/* header */
+header {
+  background-color: lavender;
+  font-family: 'Noto Sans KR', '맑은 고딕', 돋움, sans-serif;
+  font-weight: 400;
+  text-align: center;
+
+  max-width: 1200px; min-width: 900px;
+  height: 110px;
+  position: fixed;
+  top: 0; /* 위에 딱 붙게 */
+  left: 0; right: 0;  /* 중앙 정렬 방법 */
+  margin: auto; /*중앙 정렬 방법 */
+}
+
+/* 로고 */
+header h1 {
+  background-color: lightcyan;
+  width: 100px; height: 50px;
+  line-height: 50px;
+  font-weight: 700;  
+  font-size: 25px;
+  position: absolute;
+  left: 10%;
+  bottom: 10px;
+}
+
+header h1 a {
+  color: lightcoral;
+}
+
+header h1:hover {
+  background-color: cadetblue;
+}
+
+/* 유틸 로그인 회원가입 */
+header .utill {
+  background-color: #cc3939;
+  width: 110px;
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  padding: 2px 4px;
+}
+header .utill li {
+  color: white;
+  font-size:10px;
+  vertical-align: middle; 
+}
+header .utill a {
+  color: white;
+  font-size: 14px;
+}
+header .utill a:hover {
+  color: black;
+}
+
+/* 메뉴 버튼 */
+header .gnb {
+  background-color: beige; /* 틈이 안 보이게 하기 위해서 */
+  position: absolute; /* 컨텐츠가 가지고 있는 값만 */
+  padding-left: 0;
+  right: 10%;
+  bottom: 10px;
+  margin: 0;
+}
+
+header .gnb li a {
+  color: blueviolet; 
+  text-transform: capitalize; /* 대문자 변경 */
+  font-size: 20px;
+  padding: 10px 28px;
+  display: block; /* a와 li의 크기를 맞추기 위해서 */
+ 
+}
+
+header .gnb li a:hover {
+  background-color: antiquewhite;
+}
+
+/* 스크롤바 가로 크기 */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+/* 스크롤바 배경 */
+body::-webkit-scrollbar-track{
+  background-color:lightpink;
+}
+/* 스크롤바 핸들 */
+body::-webkit-scrollbar-thumb {
+  background-color:darksalmon;
+  border-radius: 15px;
+}
+
+
