@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>textEx4</title>
+ <style>
+    
+    .box1 {
+        background-color: antiquewhite;
+        width: 400px; height: 300px;
+    }
+    .box1 h2 {
+        margin: 0;
+    }
+
+    .box2 {
+        background-color: salmon;
+        width:700px; height: 150px;
+        transition: 1s;
+    }
+
+    input[type=checkbox]:checked ~.box2 {
+        transform: translateY(-300px);
+    }
+
+    input[type=checkbox]:checked ~.box1 {
+        height: 150px;
+    }
+
+ </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+    <div class="box box1">
+        <h2>:checked</h2>
+        <P>
+            커다란 힘차게 얼마나 피어나기 위하여, 수 위하여 것이다. 커다란 풍부하게 무엇을 천고에 품에 황금시대다.있으며, 유소년에게서 밥을 인류의 봄바람이다.
+        </P>
+    </div>
+    <div class="box box2">block</div>
+</body>
+</html>
