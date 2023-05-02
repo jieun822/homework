@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>flexWeb1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,200,0,0"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    section {
+      width: 100vw;
+      height: 970px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .chap1 {
+      background-color: rgb(207, 221, 235);
+      padding: 150px;
+      padding-top: 300px;
+      box-sizing: border-box;
+    }
+
+    .chap1-text {
+      width: 1200px;
+    }
+
+    .chap1 h1 {
+      font-size: 5rem;
+      margin:40px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid black;
+      padding: 20px;
+      display: block;
+      width: 120px; text-align: center;
+      height: 10px;
+      line-height: 10px;
+      border-radius: 30px;
+      margin-top: 30px;
+      letter-spacing: 3px;
+    }
+
+    a:hover {
+      border: 2px solid purple;
+      color:purple;
+    }
+
+    .chap2 {
+      background-color: antiquewhite;
+      display: flex;
+      width: 100%;
+    }
+
+
+    .chap2 img {
+      height: 970px;
+      width: 1100px;
+    }
+
+    .chap2 .aside {
+      padding: 60px;
+      margin-top: 250px;
+      width: 500px;
+    }
+
+    .chap3 {
+      display: flex;
+      background-color: rgb(207, 221, 235);
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      width: 500px;      
+    }
+
+    .box h2 {
+      font-size: 4rem;
+      margin: 30px 0;
+    }
+
+    .box1 {
+      margin-right: 150px;
+    }
+
+    .chap4 {
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .chap4 .aside {
+      padding: 60px;
+      margin-top: 250px;
+    }
+
+    .chap4 .aside h1 {
+      font-size: 3rem;
+      margin:40px 0;
+    }
+
+    .chap4 img {
+      height: 970px;
+      width: 1100px;
+    }
+
+    .chap5 {
+      background-color: rgb(207, 221, 235);
+    }
+
+    .last {
+      width: 80%;
+      margin:auto;
+      padding-top: 300px;
+    }
+
+    .chap5 h1 {
+      font-size: 6rem;
+      margin: 40px 0;
+    }
+    
+    .chap5 .mail {
+      display: flex;
+    }
+
+    .chap5 input {
+      width: 70%; height: 50px;
+      margin-right: 50px;
+      margin-top: 30px;
+      border-radius: 30px;
+      padding-left: 20px;
+      background-color: rgb(207, 221, 235);
+    }
+
+    .chap5 input:focus {
+      outline: none;
+    }
+
+    .chap5 .logo {
+      list-style: none; padding: 0; margin: 0;
+      display: flex;    
+    }
+
+    .chap5 .logo a {
+      display: block;
+      margin-right: 20px;
+      width: 30px; height: 30px;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="chap1">
+    <div class="chap1-text">
+      <p><em>Aliquam</em> Consequat</p>
+      <h1>Sed amet</h1>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br>
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+      </p>
+      <a href="#">SAGITTIS</a>
+    </div>  
+  </section>
+  <section class="chap2">
+    <div class="aside">
+      <p><em>NiSi</em> Pellentesque</p>
+      <h1>Morbitincidunt</h1>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+      </p>
+      <a href="#">LECTUS</a>
+    </div> 
+    <div class="img1"><img src="./images/Autumn.jpg"></div>  
+  </section>
+  <section class="chap3">
+    <div class="box box1">
+      <p><em>Dolor</em> Ultrices</p>
+      <h2>Ullamcorper</h2>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <a href="#">MAGNA</a>
+    </div>
+    <div class="box box2">
+      <p><em>Dolor</em> Ultrices</p>
+      <h2>Faucibus</h2>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <a href="#">TELLUS</a>
+    </div>
+  </section>
+  <section class="chap4">
+    <div class="aside">
+    <p><em>Odio</em> Veroeros</p>
+    <h1>Quam nulla</h1>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+      It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+    </p>
+    <a href="#">EULSMOD</a>
+    </div>
+    <div class="img1"> <img src="./images/피크닉.jpg"></div>
+   
+  </section>
+  <section class="chap5">
+    <div class="last">
+    <p><em>Vitae</em> Aliquam</p>
+    <h1>Auctor orci</h1>
+    <P>Contrary to popular belief, Lorem Ipsum is not simply random text.
+      It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      <br>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</P>
+    <div class="mail">
+    <input type="email" value="Email">
+    <a href="#">SUBSCRIBE</a>
+    </div>
+    <ul class="logo">
+      <li><a href="#"><span class="material-symbols-rounded sns-icon">favorite</span></a></li>
+      <li><a href="#"><span class="material-symbols-rounded sns-icon">Delete</span></a></li>
+      <li><a href="#"><span class="material-symbols-rounded sns-icon">home</span></a></li>
+      <li><a href="#"><span class="material-symbols-rounded sns-icon">mail</span></a></li>
+    </ul>
+    </div>
+  </section>
+</body>
+</html>
